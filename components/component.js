@@ -17,11 +17,11 @@ const Component = () => {
     }
     try {
       const response = await fetch(
-        `https://api.airtable.com/v0/appeE4S87yKBhZZyb/Warranty?filterByFormula={Warranty ID}='${warrantyNumber}'`,
+        `https://api.airtable.com/v0/app9hC4NdSRH0B65N/Warranty?filterByFormula={Warranty ID}='${warrantyNumber}'`,
         {
           method: "GET",
           headers: {
-            Authorization: "Bearer patjuRrHGpdA3SdRb.84cf94ba5374da58c8468374d41f4cf06e2ea0a7f2f9750a0fbb8de50c94e320",
+            Authorization: "Bearer patjWF5cbyx5o5ylN.ace9aa4c6ca8d0c32e9164ec2f0c1ea689404e6efaa4ab2a5c3369430c34dfe3",
             "Content-Type": "application/json",
           },
         }
