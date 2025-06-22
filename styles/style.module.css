@@ -1,0 +1,204 @@
+
+/* style.module.css */
+
+/* =========================== */
+/* Container Layout + Styling */
+/* =========================== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #fffff0; /* Ivory border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3); /* White haze on black */
+  background-color: #161616;
+  color: #f0f0f0;
+  width: 90%;
+  max-width: 360px;
+  margin: 50px auto;
+  font-family: 'Georgia', serif;
+  overflow: hidden;
+  max-height: 90vh;
+}
+
+.container:hover {
+  box-shadow: 0 0 15px 15px rgba(255, 255, 240, 0.5); /* Brighter on hover */
+  transform: scale(1.01);
+}
+
+/* =========================== */
+/* Text Headings & Labels     */
+/* =========================== */
+.heading {
+  color: #ffffff;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.subheading {
+  color: #4FB9BF;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.instructions {
+  font-size: 16px;
+  color: #a6cfd7;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* =========================== */
+/* Forms & Inputs             */
+/* =========================== */
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background-color: #111;
+  color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.input:focus {
+  border-color: #c5a96e;
+  outline: none;
+}
+
+/* =========================== */
+/* Buttons                    */
+/* =========================== */
+.button {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: #0b4958;
+  background-color: #f5f3f2;
+  border: none;
+  border-radius: 999px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.button:hover {
+  background-color: #e0dedd;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* =========================== */
+/* Card & Warranty Output     */
+/* =========================== */
+.card {
+  text-align: center;
+  padding: 12px;
+  background: linear-gradient(to bottom, #0b4958, #0a3d4a);
+  border-radius: 10px;
+  border: 1px solid #fffff0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+.detailLine {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* =========================== */
+/* Modal Overlay & iFrame     */
+/* =========================== */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 1px;
+  width: 110%;
+  height: 93%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+}
+
+/* =========================== */
+/* Contact Footer Text        */
+/* =========================== */
+.contactText {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contactLink {
+  color: #4FB9BF;
+  text-decoration: none;
+  font-weight: bold;
+}
